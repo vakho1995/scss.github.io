@@ -1,0 +1,20 @@
+@mixin d-flex($display, $justify, $align ){
+    display: $display;
+    justify-content:$justify;
+    align-items: $align;
+}
+
+@mixin border($size, $style, $color){
+    border-width:$size;
+    border-style:$style;
+    border-color:$color;
+}
+@mixin margin($top, $right, $bottom, $left){
+    margin-top:$top;
+    margin-right:$right;
+    margin-bottom:$bottom;
+    margin-left:$left;
+}
+@mixin transition($property, $duration, $type){
+    transition: $property $duration $type;
+}

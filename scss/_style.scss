@@ -1,0 +1,43 @@
+.section-bg{
+    background-color: lightblue;
+    .wraper{
+        @include d-flex (flex, space-around, center);
+        .left{
+            width: $size01;
+            height: $size02;
+            background-color: $color01;
+            
+            .text{
+                @include border(2px, solid, black);
+                @include margin(0, auto, 0, auto);
+                font-family: $font01;
+                width: $size00;
+                @include transition(all, 3s, linear);
+                &:hover{
+                    color:green;
+                    font-size: $size01;
+                }
+                
+            }
+        }
+        .right{
+            width: 400px;
+            height: 400px;
+            background-color: $color02;
+            @include d-flex(flex, center, flex-start);
+            p{
+                font-family: $font02;
+                &::before{
+                    width: 5px;
+                    height: 30px;
+                    background-color: black;
+                }
+                &::after{
+                    width: 5px;
+                    height: 30px;
+                    background-color: black;
+                }
+            }
+        }
+    }
+}

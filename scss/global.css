@@ -1,0 +1,117 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.2 | 20191019
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Noto Sans Nabataean";
+  src: url("../fonts/NotoSansNabataean-Regular.eot");
+  src: url("../fonts/NotoSansNabataean-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansNabataean-Regular.woff2") format("woff2"), url("../fonts/NotoSansNabataean-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.section-bg {
+  background-color: lightblue;
+}
+.section-bg .wraper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section-bg .wraper .left {
+  width: 200px;
+  height: 500px;
+  background-color: red;
+}
+.section-bg .wraper .left .text {
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  font-family: "Balsamiq Sans", cursive;
+  width: 50px;
+  transition: all 3s linear;
+}
+.section-bg .wraper .left .text:hover {
+  color: green;
+  font-size: 200px;
+}
+.section-bg .wraper .right {
+  width: 400px;
+  height: 400px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.section-bg .wraper .right p {
+  font-family: "Noto Sans Nabataean";
+}
+.section-bg .wraper .right p::before {
+  width: 5px;
+  height: 30px;
+  background-color: black;
+}
+.section-bg .wraper .right p::after {
+  width: 5px;
+  height: 30px;
+  background-color: black;
+}/*# sourceMappingURL=global.css.map */
